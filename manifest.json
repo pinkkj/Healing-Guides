@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Healing Guide",
+  "version": "1.0",
+  "description": "당신도 모르게 우울에 빠져있을 때, 저희가 도와드리겠습니다.",
+  "permissions": ["storage", "scripting", "tabs"],
+  "host_permissions": ["https://www.youtube.com/*", "http://127.0.0.1:5001/*"],
+  "content_security_policy": {
+  "extension_pages": "script-src 'self'; object-src 'self';"},
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css" : ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["candy_crush.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "healingGuide.png",
+    "48": "healingGuide.png",
+    "128": "healingGuide.png"
+  },
+  "action": {
+  "default_popup": "popup.html"
+}
+}

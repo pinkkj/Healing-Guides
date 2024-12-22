@@ -1,0 +1,22 @@
+/* 질문 공간 스타일 */
+.custom-question-space {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+  padding: 20px; /* 기존 10px에서 늘려줌 */
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  height: auto; /* 높이를 자동으로 설정 */
+}
+
+.question-style {
+  color: #131313;
+  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: left;
+  font-weight: 1000;
+  line-height: 1.5;
+}
